@@ -10,6 +10,7 @@ public class TestService : ServiceBase<ITestService>, ITestService
 {
     public async UnaryResult<int> SumAsync(int a, int b)
     {
+        Console.WriteLine($"Received:{a}, {b}");
         return a + b;
     }
 }
