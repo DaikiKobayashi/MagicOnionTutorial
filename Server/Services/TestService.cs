@@ -8,7 +8,7 @@ namespace Server.Services;
 
 public class TestService : ServiceBase<ITestService>, ITestService
 {
-    public async UnaryResult<int> AddAsync(int a, int b)
+    public async UnaryResult<int> SumAsync(int a, int b)
     {
         return a + b;
     }

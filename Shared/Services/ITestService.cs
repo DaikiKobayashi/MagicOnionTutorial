@@ -2,7 +2,7 @@
 
 namespace Shared.Services;
 
-public interface ITestService : MagicOnion.IService<ITestService>
+public interface ITestService : IService<ITestService>
 {
-    public UnaryResult<int> AddAsync(int a, int b);
+    public UnaryResult<int> SumAsync(int a, int b);
 }
